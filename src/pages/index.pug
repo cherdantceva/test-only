@@ -1,0 +1,26 @@
+extends ../template/layout
+
+mixin componentsLink(data)
+    li
+        a(href= data.href)= data.name
+
+block head
+    - var pageTitle = 'template';
+
+block content
+    .container(style="padding-top:20px;")
+        .row
+            .col-6
+                h2 Страницы
+                ul.list-unstyled
+                    +componentsLink({
+                        'href': 'ui-kits.html',
+                        'name': 'ui-kits'
+                    })
+            .col-6
+                h2 Компоненты
+                ul.list-unstyled
+                    +componentsLink({
+                        'href': 'components/header/view.html',
+                        'name': 'Шапка'
+                    })

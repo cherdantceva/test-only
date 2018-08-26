@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>UI KITS</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta name="imagetoolbar" content="no">
+    <meta name="msthemecompatible" content="no">
+    <meta name="cleartype" content="on">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link href="template_styles.css" rel="stylesheet">
+    <link href="components.css" rel="stylesheet">
+</head>
+
+<body class="b-site" itemscope itemtype="http://schema.org/WebPage">
+    <div class="container">
+        <h1>UI KITS</h1>
+        <h2>Text</h2>
+        <div class="form-group">
+            <div class="link"><a href="#">link</a></div>
+        </div>
+        <h2>Breadcrumb</h2>
+        <nav class="breadcrumb"><a class="breadcrumb-item" href="#">Home</a><a class="breadcrumb-item" href="#">Likee</a><a class="breadcrumb-item" href="#">Template</a><span class="breadcrumb-item active">Ui Kit</span></nav>
+        <h2>Buttons</h2>
+        <div class="form-group"><button class="btn btn-primary">.btn.btn-primary</button> <button class="btn btn-outline-primary">.btn .btn-outline-primary</button></div>
+        <div class="form-group"><button class="btn btn-secondary">.btn .btn-secondary</button> <button class="btn btn-outline-secondary">.btn .btn-outline-secondary</button></div>
+        <h2>Forms</h2>
+        <div class="row">
+            <div class="col-6">
+                <div class="form-group"><label for="input-default">input default</label><input class="form-control" id="input-default" value="default"></div>
+                <div class="form-group"><label for="input-disabled">input disabled</label><input class="form-control" id="input-disabled" value="disabled" disabled></div>
+                <div class="form-group"><label for="input-readonly">input readonly</label><input class="form-control" id="input-readonly" value="readonly" readonly><small class="form-text text-muted">this field can be only read</small></div>
+                <div class="form-group was-validated"><label for="input-validate">input validate</label><input class="form-control" id="input-validate" type="email" value="validate">
+                    <div class="invalid-feedback">Nooooo</div>
+                </div>
+                <div class="form-group"><label for="input-error">input error</label><input class="form-control is-invalid" id="input-error" type="email" value="current">
+                    <div class="invalid-feedback">Nooooo</div>
+                </div>
+                <div class="form-group"><label for="input-current">input current</label><input class="form-control is-valid" id="input-current" type="email" value="current">
+                    <div class="invalid-feedback">Nooooo</div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="form-group"><label for="select-default">select</label><select class="form-control custom-select" id="select-default"><option> option-1</option><option> option-2</option><option> option-3</option><option> option-4</option></select></div>
+                <div class="form-group"><label for="select-multiple">multiple select</label><select class="form-control custom-select" id="select-multiple" multiple><option> option-1</option><option> option-2</option><option> option-3</option><option> option-4</option></select></div>
+            </div>
+        </div>
+        <fieldset class="form-group">
+            <legend>checkboxes and radios</legend>
+            <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="radio" name="radio-default" value="1" checked> Radio button one</label></div>
+            <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="radio" name="radio-default" value="2"> Radio button two</label></div>
+            <div class="form-check"><label class="form-check-label"><input class="form-check-input" type="checkbox"> Checkbox</label></div>
+        </fieldset>
+        <fieldset class="form-group">
+            <legend>custom checkboxes and radios</legend>
+            <div class="custom-control custom-radio"><input class="custom-control-input" id="customRadio1" type="radio" name="customRadio"><label class="custom-control-label" for="customRadio1">Radio button one</label></div>
+            <div class="custom-control custom-radio"><input class="custom-control-input" id="customRadio2" type="radio" name="customRadio"><label class="custom-control-label" for="customRadio2">Radio button two</label></div>
+            <div class="custom-control custom-checkbox"><input class="custom-control-input" id="customCheck1" type="checkbox"><label class="custom-control-label" for="customCheck1">Custom checkbox</label></div>
+        </fieldset>
+        <h2>Pagination</h2>
+        <nav>
+            <ul class="pagination">
+                <li class="page-item"><a class="page-link" href="#">Prev</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+        </nav>
+        <h2>Tabs</h2>
+        <ul class="nav nav-tabs">
+            <li class="nav-item"><a class="nav-link active" href="#">Active</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+            <li class="nav-item"><a class="nav-link disabled" href="#">Disabled</a></li>
+        </ul>
+    </div>
+    <script src="https://yastatic.net/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/main.bundle.js"></script>
+</body>
+
+</html>

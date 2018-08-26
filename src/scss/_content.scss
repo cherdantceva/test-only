@@ -1,0 +1,13 @@
+// Разметка для контента админки
+.content-area {
+
+    iframe,
+    embed,
+    object {
+        width: 100% !important;
+    }
+
+    img {
+        max-width: 100%;
+    }
+}

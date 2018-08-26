@@ -1,0 +1,65 @@
+// свои анимации. Because animate.css sucks
+.has-animations {
+	.animate {
+		opacity: 0;
+		transition: opacity .5s;
+
+		&.animated {
+			opacity: 1;
+		}
+	}
+
+	.animate-left {
+		opacity: 0;
+		transition: opacity .5s, transform .5s;
+		transform: translateX(-100px);
+
+		&.animated {
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+		@include media-breakpoint-down(sm) {
+			transform: translateX(0);
+		}
+	}
+
+	.animate-right {
+		opacity: 0;
+		transition: opacity .5s, transform .5s;
+		transform: translateX(100px);
+
+		&.animated {
+			opacity: 1;
+			transform: translateX(0);
+		}
+
+		@include media-breakpoint-down(sm) {
+			transform: translateX(0);
+		}
+
+
+	}
+
+	.animate-top {
+		opacity: 0;
+		transition: opacity .5s, transform .5s;
+		transform: translateY(-100px);
+
+		&.animated {
+			opacity: 1;
+			transform: translateY(0);
+		}
+	}
+
+	.animate-bottom {
+		opacity: 0;
+		transition: opacity .5s, transform .5s;
+		transform: translateY(100px);
+
+		&.animated {
+			opacity: 1;
+			transform: translateX(0);
+		}
+	}
+}

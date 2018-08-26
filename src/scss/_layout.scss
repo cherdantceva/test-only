@@ -1,0 +1,16 @@
+.btn,
+.form-check-label,
+.form-check-input:not([disabled]) {
+    cursor: pointer;
+}
+
+// слайдер с высотой 100%
+.swiper-container-100 {
+    .swiper-wrapper {
+        min-height: 100%;
+    }
+
+    .swiper-slide {
+        height: auto !important;
+    }
+}

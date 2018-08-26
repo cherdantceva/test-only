@@ -1,0 +1,141 @@
+extends ../template/layout
+
+block head
+    - var pageTitle = 'UI KITS';
+
+block content
+    .container
+        h1 UI KITS
+
+        h2 Text
+        .form-group
+            .link
+                a(href="#") link
+
+        h2 Breadcrumb
+        nav.breadcrumb
+            a.breadcrumb-item(href='#') Home
+            a.breadcrumb-item(href='#') Likee
+            a.breadcrumb-item(href='#') Template
+            span.breadcrumb-item.active Ui Kit
+
+
+        h2 Buttons
+        .form-group
+            button.btn.btn-primary .btn.btn-primary
+            =' '
+            button.btn.btn-outline-primary .btn .btn-outline-primary
+
+        .form-group
+            button.btn.btn-secondary .btn .btn-secondary
+            =' '
+            button.btn.btn-outline-secondary .btn .btn-outline-secondary
+
+
+        h2 Forms
+        .row
+            .col-6
+                .form-group
+                    label(for= 'input-default') input default
+                    input#input-default.form-control(value= 'default')
+
+                .form-group
+                    label(for= 'input-disabled') input disabled
+                    input#input-disabled.form-control(value= 'disabled' disabled)
+
+                .form-group
+                    label(for= 'input-readonly') input readonly
+                    input#input-readonly.form-control(value= 'readonly' readonly)
+                    small.form-text.text-muted this field can be only read
+
+                .form-group.was-validated
+                    label(for= 'input-validate') input validate
+                    input#input-validate.form-control(type='email' value= 'validate')
+                    .invalid-feedback Nooooo
+
+                .form-group
+                    label(for= 'input-error') input error
+                    input#input-error.form-control.is-invalid(type='email' value= 'current')
+                    .invalid-feedback Nooooo
+
+                .form-group
+                    label(for= 'input-current') input current
+                    input#input-current.form-control.is-valid(type='email' value= 'current')
+                    .invalid-feedback Nooooo
+
+
+            .col-6
+                .form-group
+                    label(for= 'select-default') select
+                    select#select-default.form-control.custom-select
+                        option  option-1
+                        option  option-2
+                        option  option-3
+                        option  option-4
+
+                .form-group
+                    label(for= 'select-multiple') multiple select
+                    select#select-multiple.form-control.custom-select(multiple)
+                        option  option-1
+                        option  option-2
+                        option  option-3
+                        option  option-4
+
+        fieldset.form-group
+            legend checkboxes and radios
+            .form-check
+                label.form-check-label
+                    input.form-check-input(type='radio' name='radio-default' value='1' checked)
+                    |  Radio button one
+
+            .form-check
+                label.form-check-label
+                    input.form-check-input(type='radio' name='radio-default' value='2')
+                    |  Radio button two
+
+            .form-check
+                label.form-check-label
+                    input.form-check-input(type='checkbox')
+                    |  Checkbox
+
+        fieldset.form-group
+            legend custom checkboxes and radios
+
+            .custom-control.custom-radio
+                input#customRadio1.custom-control-input(type='radio', name='customRadio')
+                label.custom-control-label(for='customRadio1') Radio button one
+
+            .custom-control.custom-radio
+                input#customRadio2.custom-control-input(type='radio', name='customRadio')
+                label.custom-control-label(for='customRadio2') Radio button two
+
+            .custom-control.custom-checkbox
+                input#customCheck1.custom-control-input(type='checkbox')
+                label.custom-control-label(for='customCheck1') Custom checkbox
+
+
+        h2 Pagination
+        nav
+            ul.pagination
+                li.page-item
+                    a.page-link(href='#') Prev
+                li.page-item
+                    a.page-link(href='#') 1
+                li.page-item
+                    a.page-link(href='#') 2
+                li.page-item
+                    a.page-link(href='#') 3
+                li.page-item
+                    a.page-link(href='#') Next
+
+
+        h2 Tabs
+        ul.nav.nav-tabs
+            li.nav-item
+                a.nav-link.active(href='#') Active
+            li.nav-item
+                a.nav-link(href='#') Link
+            li.nav-item
+                a.nav-link(href='#') Link
+            li.nav-item
+                a.nav-link.disabled(href='#') Disabled
