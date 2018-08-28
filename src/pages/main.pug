@@ -1,0 +1,16 @@
+extends ../template/layout
+
+include ../components/header/mixin
+include ../components/top-section/mixin
+
+
+mixin componentsLink(data)
+    li
+        a(href= data.href)= data.name
+
+block head
+    - var pageTitle = 'template';
+
+block content
+
+    +top-section

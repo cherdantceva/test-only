@@ -1,0 +1,88 @@
+$font-family-sans-serif: Houschka Pro, -apple-system, system-ui, Arial, sans-serif !default;
+$headings-font-family: Proxima Nova, sans-serif;
+
+// Define the minimum dimensions at which your layout will change
+$grid-breakpoints: (
+        xs: 0,
+        sm: 425px,
+        md: 768px,
+        lg: 1200px,
+        xl: 1366px
+) !default;
+
+// define maximum width of '.container' for different screen sizes
+$container-max-widths: (
+        sm: 768px,
+        md: 1024px,
+        lg: 1100px,
+        xl: 1630px
+);
+
+$grid-gutter-width: 40px !default;
+
+//
+// Color system
+//
+
+$primary: #33323b !default;
+$secondary: #7c4dff !default;
+
+//$brown: saturate(lighten($primary, 19%), 19%); !default;
+$gray: #58575c;
+
+
+//$theme-colors: ('brown': $brown);
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+$h1-font-size: 5rem !default;
+$h2-font-size: 3.75rem !default;
+$h3-font-size: 1.75rem !default;
+
+$headings-margin-bottom:      0.5em !default;
+$headings-font-weight:        800 !default;
+
+$headings-color: black !default;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color: inherit !default;
+$link-decoration: none !default;
+$link-hover-color: inherit !default;
+$link-hover-decoration: underline !default;
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$input-btn-line-height: 1.25 !default;
+$btn-padding-y: 18px !default;
+$btn-padding-x: 35px !default;
+$btn-border-width: 1px !default;
+$btn-font-weight: 300 !default;
+$btn-box-shadow: none !default;
+$btn-focus-width: 0 !default;
+$btn-focus-box-shadow: none !default;
+$btn-active-box-shadow: none !default;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius: 0 !default;
+
+// Forms
+$label-margin-bottom: 0 !default;
+$input-padding-y: 0.4em !default;
+$input-padding-x: 10px !default;
+$input-line-height: $input-btn-line-height !default;
+$input-color: #303030;
+
+$input-border-color: $primary !default;
+$input-border-width: 1px !default;
+$input-box-shadow: none !default;
+$input-border-radius: none !default;
+$input-focus-width: 1px !default;
+$input-focus-box-shadow: none !default;
+$input-focus-border-color: $primary !default;

@@ -1,0 +1,16 @@
+mixin top-section
+    .b-top-section.d-flex.flex-column.justify-content-between
+        .top-section-bg
+            img(src="images/top-section-img.jpg" class="top-img")
+        .container
+            .col-8.mx-auto
+                .subtitle.white пионер инжиниринг
+                h1 Ваш надежный партнёр в&nbsp;торговле
+        .container-fluid
+            .row
+                .col-11.mx-auto
+                    .menu-desctop
+                        ul.nav.nav-fill.justify-content-between
+                            each item in ['Оператор фискальных данных', 'Электронная цифровая подпись', 'Кассовое оборудование', 'Сервис']
+                                li.nav-item.col-auto.text-left
+                                    a(href='#' class='nav-link')= item

@@ -4,13 +4,25 @@
     cursor: pointer;
 }
 
-// слайдер с высотой 100%
-.swiper-container-100 {
-    .swiper-wrapper {
-        min-height: 100%;
+//заголовки
+
+h1 {
+    color: white;
+    line-height: 1.125;
+}
+
+.subtitle {
+    font-family: "Proxima Nova", sans-serif;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+
+    &.white {
+        color: white;
     }
 
-    .swiper-slide {
-        height: auto !important;
+    &.primary {
+        color: $primary;
     }
 }
+
+
