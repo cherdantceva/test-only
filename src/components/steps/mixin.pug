@@ -3,14 +3,14 @@ mixin steps
         .row
             each step in [{number: "01", text_strong: "Зарегистрируйтесь", text: "в ", link: "личном кабинете", link_href: "#"}, {number: "02", text_strong: "Заключите договор", text: "с ОФД Пионер"}, {number: "03", text_strong: "Используйте", text: "новые возможности"}]
 
-                .col
-                    .step-item
-                        .number=step.number
-                        .content
+                .col-12.col-md-4
+                    .step-item.text-md-center.d-flex.d-md-block.mb-4
+                        .number.col-3.text-sm-center=step.number
+                        .content.col
                             .h3= step.text_strong
                             if(step.link)
                                 span.text= step.text
-                                | #[a(href= step.link_href class= "step-link")= step.link]
+                                    | #[a(href= step.link_href class= "step-link")= step.link]
 
                             else
                                 .text= step.text

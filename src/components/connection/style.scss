@@ -4,11 +4,19 @@
   background: white;
   padding: 70px 0 100px;
   margin-bottom: 110px;
+  @include media-breakpoint-down(sm) {
+    padding: 40px 0 60px;
+    margin-bottom: 40px;
+  }
 
   .text {
     font-size: 1.375rem;
     line-height: 1.45;
     color: $gray;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 1rem;
+    }
   }
 
   .text-strong {

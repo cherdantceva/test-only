@@ -1,34 +1,49 @@
 @import "../../scss/core";
 
 .b-steps {
-  margin-bottom: 60px;
+  margin-bottom: 36px;
 
   .step-item {
     border: 2px solid white;
-    text-align: center;
     position: relative;
-    height: 320px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     color: $gray;
+    @include media-breakpoint-down(sm) {
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
 
     .number {
-      position: absolute;
+      position: relative;
       z-index: 0;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
       font-size: 280px;
       font-weight: bold;
       color: white;
       line-height: 1.2;
       font-family: "Proxima Nova", sans-serif;
+
+      @include media-breakpoint-down(lg) {
+        font-size: calcFluidFontSize(50, 280, 425, 1366);
+      }
+
+      @include media-breakpoint-down(xs) {
+        font-size: 50px;
+      }
     }
 
     .content {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
       z-index: 2;
+
+      @include media-breakpoint-down(sm) {
+        position: static;
+      }
 
       .h3 {
         color: $gray;
@@ -37,6 +52,16 @@
 
       .text, .step-link {
         font-size: 1.75rem;
+      }
+
+      .h3, .text, .step-link {
+        @include media-breakpoint-down(lg) {
+          font-size: calcFluidFontSize(16, 28, 425, 1366);
+        }
+
+        @include media-breakpoint-down(xs) {
+          font-size: 16px;
+        }
       }
 
       .step-link {
