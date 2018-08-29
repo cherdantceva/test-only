@@ -1,7 +1,19 @@
+include ../header-menu/mixin
 mixin header
-    .b-header.container
-        .nav.justify-content-center
-            a.nav-link.active(href= '#') Active
-            a.nav-link(href= '#') Link
-            a.nav-link(href= '#') Link
-            a.nav-link.disabled(href= '#') Disabled
+    .b-header
+        +header-menu
+        .toggle-menu.js-show-menu
+            .btn-show-menu
+                div
+                div
+                div
+
+        .container.logo-container
+            .row
+                .col-12.col-lg-8.mx-auto
+                    .logo
+                        a.logo-img.logo-big(href='#')
+                            img(src='images/header-logo-big.png' class='')
+                        a.logo-img.logo-smoll(href='#')
+                            img(src='images/header-logo-smoll.png' class='')
+

@@ -1,0 +1,20 @@
+mixin header-menu
+
+    .b-header-menu.d-flex.flex-column.justify-content-center
+        .menu-active.flex-lg-grow-1.d-flex.flex-column.justify-content-center
+            .container
+                .row
+                    .col-12.col-lg-8.mx-auto
+                        ul.list-unstyled
+                            each item in ['ОФД', 'Электронная подпись', 'Кассовое оборудование', 'База знаний', 'Компания', 'Для ЦТО', 'Контакты']
+                                li.h2.nav-item.text-left
+                                    a(href='#' class='nav-link')= item
+        .menu-footer.flex-grow-0
+            .container
+                .row
+                    .col-12.col-lg-8.mx-auto
+                        .row.justify-content-between
+                            .col-auto
+                                .text-copy Design by ONLY.
+                            .col-auto
+                                .text-copy © Пионер Инжиниринг, 2017

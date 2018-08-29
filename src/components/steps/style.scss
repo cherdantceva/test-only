@@ -7,6 +7,26 @@
     border: 2px solid white;
     position: relative;
     color: $gray;
+
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      display: block;
+      width: 80px;
+      height: 3px;
+      background: $secondary;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+
+    &:before {
+      top: -2px;
+    }
+
+    &:after{
+      bottom: -2px;
+    }
     @include media-breakpoint-down(sm) {
       padding-top: 15px;
       padding-bottom: 15px;

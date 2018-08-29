@@ -1,0 +1,57 @@
+@import "../../scss/core";
+
+.b-header-menu {
+  position: relative;
+  min-height: 100vh;
+  background: black;
+  color: white;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  padding-top: 120px;
+  @include media-breakpoint-down(lg) {
+    padding-top: 40px;
+  }
+
+  .h2 {
+    color: white;
+    margin-bottom: 0;
+
+    @include media-breakpoint-down(lg) {
+      font-size: calcFluidFontSize(18, 50, 425, 1366);
+    }
+
+    @include media-breakpoint-down(xs) {
+      font-size: 18px;
+    }
+
+
+  }
+
+  .menu-active {
+    .nav-link {
+      padding-left: 0;
+      padding-right: 0;
+      &:hover {
+        color: $gray;
+      }
+    }
+  }
+
+  .menu-footer {
+    .text-copy {
+      font-size: 12px;
+      text-transform: uppercase;
+      font-family: "Proxima Nova", sans-serif;
+      font-weight: 300;
+      padding: 30px 0;
+
+      @include media-breakpoint-down(xs) {
+        font-size: 10px;
+        padding: 10px 0
+      }
+    }
+  }
+}
