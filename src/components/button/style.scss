@@ -1,0 +1,19 @@
+@import "../../scss/core";
+
+.b-button {
+  display: flex;
+  align-items: stretch;
+
+  .text {
+    margin-left: 30px;
+    font-size: 1rem;
+
+    .big {
+      font-family: "Proxima Nova", sans-serif;
+      font-weight: bold;
+      font-size: 1.75rem;
+      line-height: 1.2;
+    }
+  }
+
+}

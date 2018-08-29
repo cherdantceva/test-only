@@ -2,7 +2,14 @@
 
 .b-top-section {
   min-height: 100vh;
-  padding: 120px 0;
+  //padding-bottom: 120px;
+  padding-top: 120px;
+  position: relative;
+  @include media-breakpoint-down(md) {
+    padding-top: 80px;
+  }
+
+
 
   .top-section-bg {
     position: absolute;
@@ -20,18 +27,36 @@
     width: 100%;
     min-height: 100%;
     padding: 0;
+    object-fit: cover;
+  }
+
+  .top-section-headling {
+    margin-bottom: 100px;
+    .subtitle {
+      margin-bottom: 40px;
+    }
   }
 
   .menu-desctop {
     color: white;
     font-family: "Proxima Nova", sans-serif;
     font-weight: bold;
-    color: white;
+    margin-bottom: 120px;
     font-size: 1.125rem;
 
     .nav-link {
       padding: 35px 0;
-      border-top: 1px solid white;
+      position: relative;
+      &:after {
+        content: '';
+        position: absolute;
+        display: block;
+        height: 1px;
+        width: 80px;
+        left: 0;
+        top: 0;
+        background-color: white;
+      }
     }
   }
 }

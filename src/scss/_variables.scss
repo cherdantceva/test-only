@@ -15,7 +15,7 @@ $container-max-widths: (
         sm: 768px,
         md: 1024px,
         lg: 1100px,
-        xl: 1630px
+        xl: 1320px
 );
 
 $grid-gutter-width: 40px !default;
@@ -26,6 +26,9 @@ $grid-gutter-width: 40px !default;
 
 $primary: #33323b !default;
 $secondary: #7c4dff !default;
+
+$light-secondary: #f3f2f5;
+$yellow: #ffc107;
 
 //$brown: saturate(lighten($primary, 19%), 19%); !default;
 $gray: #58575c;
@@ -60,8 +63,8 @@ $link-hover-decoration: underline !default;
 // For each of Bootstrap's buttons, define text, background, and border color.
 
 $input-btn-line-height: 1.25 !default;
-$btn-padding-y: 18px !default;
-$btn-padding-x: 35px !default;
+$btn-padding-y: 0 !default;
+$btn-padding-x: 37px !default;
 $btn-border-width: 1px !default;
 $btn-font-weight: 300 !default;
 $btn-box-shadow: none !default;

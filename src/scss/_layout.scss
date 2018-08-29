@@ -4,6 +4,13 @@
     cursor: pointer;
 }
 
+//контейнеры
+
+.container-max {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
 //заголовки
 
 h1 {
@@ -11,18 +18,57 @@ h1 {
     line-height: 1.125;
 }
 
+h1, .h1 {
+    font-size: 5rem;
+    @include media-breakpoint-down(lg) {
+        font-size: calcFluidFontSize(36, 80, 425, 1366);
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 36px;
+    }
+}
+
+
+h2 {
+    margin-bottom: 0.3em;
+}
+
+h3 {
+    margin-bottom: 1.8em;
+}
+
+.btn {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    line-height: 57px;
+    height: 57px;
+}
+
 .subtitle {
     font-family: "Proxima Nova", sans-serif;
     text-transform: uppercase;
     font-size: 0.75rem;
+    margin-bottom: 30px;
 
     &.white {
         color: white;
     }
 
-    &.primary {
-        color: $primary;
+    &.secondary {
+        color: $secondary;
     }
+}
+
+//цветные sections
+
+.section-light-secondary {
+    background: $light-secondary;
+    padding: 70px 0 120px;
+}
+
+.section-yellow {
+    background: $yellow;
 }
 
 

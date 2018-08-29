@@ -1,15 +1,16 @@
 mixin top-section
-    .b-top-section.d-flex.flex-column.justify-content-between
+    .b-top-section.d-flex.flex-column.justify-content-center
         .top-section-bg
             img(src="images/top-section-img.jpg" class="top-img")
-        .container
-            .col-8.mx-auto
-                .subtitle.white пионер инжиниринг
-                h1 Ваш надежный партнёр в&nbsp;торговле
-        .container-fluid
-            .row
-                .col-11.mx-auto
-                    .menu-desctop
+        .top-section-headling.flex-lg-grow-1.d-flex.flex-column.justify-content-center
+            .container
+                .col-12.col-lg-8.mx-auto
+                    .subtitle.white пионер инжиниринг
+                    h1 Ваш надежный партнёр в&nbsp;торговле
+        .menu-desctop.d-none.d-lg-block.flex-grow-0
+            .container-fluid
+                .row
+                    .col-11.mx-auto
                         ul.nav.nav-fill.justify-content-between
                             each item in ['Оператор фискальных данных', 'Электронная цифровая подпись', 'Кассовое оборудование', 'Сервис']
                                 li.nav-item.col-auto.text-left

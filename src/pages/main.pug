@@ -2,6 +2,9 @@ extends ../template/layout
 
 include ../components/header/mixin
 include ../components/top-section/mixin
+include ../components/connection/mixin
+include ../components/steps/mixin
+include ../components/button/mixin
 
 
 mixin componentsLink(data)
@@ -14,3 +17,20 @@ block head
 block content
 
     +top-section
+
+    section.section-light-secondary
+
+        .container-max
+            +connection
+
+        .container
+            .row
+                .col-8.mx-auto
+                    h3 Вам нужно выполнить только три простых шага
+
+            +steps
+
+            .row
+                .col-8.mx-auto
+                    +button
+

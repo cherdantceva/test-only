@@ -1,0 +1,19 @@
+@import "../../scss/core";
+
+.b-connection {
+  background: white;
+  padding: 70px 0 100px;
+  margin-bottom: 110px;
+
+  .text {
+    font-size: 1.375rem;
+    line-height: 1.45;
+    color: $gray;
+  }
+
+  .text-strong {
+    font-weight: 600;
+  }
+
+
+}

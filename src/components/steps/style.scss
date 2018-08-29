@@ -1,0 +1,71 @@
+@import "../../scss/core";
+
+.b-steps {
+  margin-bottom: 60px;
+
+  .step-item {
+    border: 2px solid white;
+    text-align: center;
+    position: relative;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $gray;
+
+    .number {
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      font-size: 280px;
+      font-weight: bold;
+      color: white;
+      line-height: 1.2;
+      font-family: "Proxima Nova", sans-serif;
+    }
+
+    .content {
+      z-index: 2;
+
+      .h3 {
+        color: $gray;
+        margin-bottom: 0.5em;
+      }
+
+      .text, .step-link {
+        font-size: 1.75rem;
+      }
+
+      .step-link {
+        position: relative;
+        display: inline-block;
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: 3;
+          height: 1px;
+          width: 100%;
+          background-color: transparentize($gray, 0.8);
+          bottom: 0.15em;
+          left: 0;
+          opacity: 0;
+          transition: opacity 0.3s ease-out;
+        }
+
+        &:hover {
+          text-decoration: none;
+
+          &:after {
+            opacity: 1;
+          }
+        }
+      }
+
+    }
+  }
+}
